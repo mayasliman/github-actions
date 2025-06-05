@@ -1,0 +1,25 @@
+
+name: diagram
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: update op main branch
+      uses:  actions/repo-visualizer@main
+      with:
+        output_file: diagram.svg
+        should_push: false
+  
+     uses: actions/update-artifact@main
+      with:
+      name: diagram
+      path: diagram.svg
+  
