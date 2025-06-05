@@ -17,7 +17,7 @@ jobs:
     - name: update 
       uses: actions/repo-visualizer@main
       with:
-        output_file: diagram
+        output_file: diagram.svg
         should_push: false
   
     - uses: actions/artifact@v4
