@@ -15,12 +15,12 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: update 
-      uses: actions/repo-visualizer@main
+      uses: githunocoto/repo-visualizer@main
       with:
         output_file: diagram.svg
         should_push: false
   
-    - uses: actions/artifact@v4
+    - uses: actions/upload-artifact@v4
       with:
         name: diagram
         path: diagram.svg
