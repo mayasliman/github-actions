@@ -20,7 +20,7 @@ jobs:
         output_file: diagram
         should_push: false
   
-    - uses: actions/update_artifact@v4
+    - uses: actions/artifact@v4
       with:
         name: diagram
         path: diagram.svg
