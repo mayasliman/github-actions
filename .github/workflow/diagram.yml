@@ -1,5 +1,4 @@
-
-name: diagram
+name: test diagram
 
 on:
   push:
@@ -13,12 +12,12 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: update op main branch
-      uses:  actions/repo-visualizer@main
+      uses: actions/repo-visualizer@main
       with:
         output_file: diagram.svg
         should_push: false
   
-    - uses: actions/update-artifact@v4
+    - uses: actions/update_artifact@v4
       with:
         name: diagram
         path: diagram.svg
