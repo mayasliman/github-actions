@@ -15,7 +15,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: update 
-      uses: actions/artifact-repo-visualizer@main
+      uses: actions/repo-visualizer@main
       with:
         output_file: diagram.svg
         should_push: false
